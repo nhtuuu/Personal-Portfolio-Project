@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assests/script.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link rel="stylesheet" href="./assests/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div
+        class="container mx-auto flex flex-row-reverse justify-between lg:grid lg:grid-cols-3 lg:p-0 p-[20px]"
+      >
+        <div class="header__contact flex items-center gap-1.5">
+          <img
+            src="./assests/img/Logo.png"
+            alt="Email"
+            class="header__contact__logo w-[34px] lg:w-[46px]"
+          />
+          <img
+            src="./assests/img/Menu.png"
+            alt="Menu"
+            class="header__menu lg:hidden"
+          />
+          <a
+            href="mailto:hi@arif.interactive"
+            target="_blank"
+            class="hidden lg:inline-block"
+            ><div class="header__contact__email">hi@arif.interactive</div></a
+          >
+        </div>
+        <img
+          src="./assests/img/Face.png"
+          alt="Face"
+          class="header__face w-[100px] hidden lg:mx-auto lg:block"
+        />
+        <img
+          src="./assests/img/Face-small.png"
+          alt="Face"
+          class="header__face lg:hidden w-[37px] h-[44px]"
+        />
+        <ul
+          class="header__links lg:flex items-center justify-end gap-x-[43px] hidden"
+        >
+          <a href="#!"><li class="header__links__link">Projects</li></a>
+          <a href="#!"><li class="header__links__link">Journey</li></a>
+          <a href="#!"><li class="header__links__link">Service</li></a>
+          <a href="#!"><li class="header__links__link">Contact</li></a>
+        </ul>
+      </div>
+      <div class="header__line h-[1px] mx-[7px] lg:hidden"></div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div
+          class="hero__inner container mx-auto lg:px-14 px-[20px] lg:pt-11 gap-x-[156px] lg:grid lg:grid-cols-2 flex flex-col-reverse"
+        >
+          <div>
+            <figure class="hero__img__wrap">
+              <img src="./assests/img/Hero.png" alt="Hero" class="hero__img" />
+              <img
+                src="./assests/img/Hero-decor1.svg"
+                alt="Decor 1"
+                class="hero__decor1 scale-[1.8] bottom-[100px] left-[10px]"
+              />
+            </figure>
+          </div>
+          <div class="hero__info flex flex-col lg:mt-[137px] mt-[50px]">
+            <h1 class="hero__heading text-[42px] leading-[50px]">
+              An Interactive Designer
+            </h1>
+            <p class="hero__desc mt-8 max-w-[370px] text-[16px] leading-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+              non nisl tincidunt ut elementum turpis.
+            </p>
+            <div class="hero__cta mt-[50px]">
+              <button
+                class="hero__cta__book btn w-[147px] h-[55px] text-[16px]"
+              >
+                Book a Call
+              </button>
+              <a href="#!" class="hero__cta__work ml-[30px]">My Works</a>
+            </div>
+            <div
+              class="hero__socials lg:mt-[104px] mt-[30px] flex items-center gap-4"
+            >
+              <span class="hero__socials__desc">Follow me on:</span>
+              <img src="./assests/img/Goggle.png" alt="Google" />
+              <img src="./assests/img/icon.png" alt="Icon" />
+              <img src="./assests/img/Instagram.png" alt="IG" />
+            </div>
+            <img
+              src="./assests/img/Hero-decor2.svg"
+              alt="Decor 2"
+              class="hero__decor2 hidden lg:inline-block"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Features -->
+      <section class="features">
+        <div
+          class="features__inner container mx-auto lg:px-14 px-[20px] pt-[100px] flex flex-col"
+        >
+          <div
+            class="features__clients lg:grid lg:grid-cols-12 flex flex-col items-center"
+          >
+            <div class="lg:col-start-2 lg:col-span-3 max-w-[253px]">
+              <div
+                class="features__line w-[48px] h-[2px] mx-auto lg:hidden"
+              ></div>
+              <h2 class="features__clients__heading text-center lg:text-left">
+                Meet my recent clients
+              </h2>
+            </div>
+            <div class="lg:col-end-13 lg:col-span-8 flex lg:mt-[0] mt-[40px]">
+              <div class="features__clients__list ml-auto">
+                <a href="#!" class="features__clients__list__item flex"
+                  ><img
+                    src="./assests/img/GG.png"
+                    alt="Google"
+                    class="features__clients__list__item__img"
+                  />
+                </a>
+                <a href="#!" class="features__clients__list__item flex"
+                  ><img
+                    src="./assests/img/WB.png"
+                    alt="Google"
+                    class="features__clients__list__item__img"
+                  />
+                </a>
+                <a href="#!" class="features__clients__list__item flex"
+                  ><img
+                    src="./assests/img/MC.png"
+                    alt="Google"
+                    class="features__clients__list__item__img"
+                  />
+                </a>
+                <a href="#!" class="features__clients__list__item flex"
+                  ><img
+                    src="./assests/img/Adobe.png"
+                    alt="Google"
+                    class="features__clients__list__item__img"
+                  />
+                </a>
+                <a href="#!" class="features__clients__list__item flex"
+                  ><img
+                    src="./assests/img/Up.png"
+                    alt="Google"
+                    class="features__clients__list__item__img"
+                  />
+                </a>
+                <a href="#!" class="features__clients__list__item flex"
+                  ><img
+                    src="./assests/img/Cloud.png"
+                    alt="Google"
+                    class="features__clients__list__item__img"
+                  />
+                </a>
+                <a href="#!" class="features__clients__list__item flex"
+                  ><img
+                    src="./assests/img/Woo.png"
+                    alt="Google"
+                    class="features__clients__list__item__img"
+                  />
+                </a>
+                <a href="#!" class="features__clients__list__item flex"
+                  ><img
+                    src="./assests/img/Canva.png"
+                    alt="Google"
+                    class="features__clients__list__item__img"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <h2
+            class="features__heading mt-[130px] text-center text-[36px] leading-[42px]"
+          >
+            Specialities
+          </h2>
+          <div
+            class="features__desc mx-auto mt-4 text-center max-w-[534px] text-[16px] leading-[26px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+            non nisl tincidunt ut elementum turpis.
+          </div>
+          <div
+            class="features__services flex mt-[60px] lg:mb-[140px] gap-[30px] overflow-hidden"
+          >
+            <div
+              class="features__services__item px-[35px] py-[45px] flex-[0_0_auto] lg:flex-[0_1_auto]"
+            >
+              <img
+                src="./assests/img/Bub.png"
+                alt="Bub"
+                class="features__services__item__img w-[74px] h-[74px]"
+              />
+              <h3 class="features__services__item__heading mt-4">
+                Product design
+              </h3>
+              <p class="features__services__item__desc mt-4">
+                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
+                solor ut elementum turpis.
+              </p>
+            </div>
+            <div
+              class="features__services__item px-[35px] py-[45px] flex-[0_0_auto] lg:flex-[0_1_auto]"
+            >
+              <img
+                src="./assests/img/Pencil.png"
+                alt="Pencil"
+                class="features__services__item__img w-[74px] h-[74px]"
+              />
+              <h3 class="features__services__item__heading mt-4">
+                UI/UX Design
+              </h3>
+              <p class="features__services__item__desc mt-4">
+                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
+                solor ut elementum turpis.
+              </p>
+            </div>
+            <div
+              class="features__services__item px-[35px] py-[45px] flex-[0_0_auto] lg:flex-[0_1_auto]"
+            >
+              <img
+                src="./assests/img/iPhone.png"
+                alt="Bub"
+                class="features__services__item__img w-[74px] h-[74px]"
+              />
+              <h3 class="features__services__item__heading mt-4">
+                Interactive design
+              </h3>
+              <p class="features__services__item__desc mt-4">
+                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
+                solor ut elementum turpis.
+              </p>
+            </div>
+          </div>
+          <div class="show-on-mobile lg:hidden mb-[120px]">
+            <div class="dot dot-active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section class="projects lg:py-[86px] pt-[70px] pb-[60px]">
+        <div class="container mx-auto px-14 flex flex-col">
+          <div
+            class="projects__top lg:grid lg:grid-cols-12 items-center mb-[70px] flex flex-col"
+          >
+            <h2
+              class="projects__heading col-span-5 text-center text-[36px] leading-[42px]"
+            >
+              Take a look at my recent projects
+            </h2>
+            <p class="projects__desc col-span-4 col-start-7 ml-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+              non nisl tincidunt ut elementum turpis.
+            </p>
+          </div>
+          <div class="projects__list grid grid-cols-2 gap-[30px] mb-[80px]">
+            <div class="projects__list__item p-[24px] flex justify-between">
+              <div class="projects__list__info">
+                <h3 class="projects__list__heading mb-[10px]">Wally Website</h3>
+                <p class="projects__list__desc mb-[20px]">
+                  Lorem ipsum dolor amet, consectetur adipiscing st elit.
+                </p>
+                <a href="#!" class="projects__list__cta">Case Study</a>
+              </div>
+              <img
+                src="./assests/img/Project1.png"
+                alt="Project 1"
+                class="projects__list__img"
+              />
+              <img
+                src="./assests/img/Projects-decor.svg"
+                alt="Projects Decor"
+                class="projects__decor"
+              />
+            </div>
+            <div class="projects__list__item p-[24px] flex justify-between">
+              <div class="projects__list__info">
+                <h3 class="projects__list__heading mb-[10px]">Wally Website</h3>
+                <p class="projects__list__desc mb-[20px]">
+                  Lorem ipsum dolor amet, consectetur adipiscing st elit.
+                </p>
+                <a href="#!" class="projects__list__cta">Case Study</a>
+              </div>
+              <img
+                src="./assests/img/Project2.png"
+                alt="Project 2"
+                class="projects__list__img"
+              />
+              <img
+                src="./assests/img/Projects-decor.svg"
+                alt="Projects Decor"
+                class="projects__decor"
+              />
+            </div>
+            <div class="projects__list__item p-[24px] flex justify-between">
+              <div class="projects__list__info">
+                <h3 class="projects__list__heading mb-[10px]">Wally Website</h3>
+                <p class="projects__list__desc mb-[20px]">
+                  Lorem ipsum dolor amet, consectetur adipiscing st elit.
+                </p>
+                <a href="#!" class="projects__list__cta">Case Study</a>
+              </div>
+              <img
+                src="./assests/img/Project3.png"
+                alt="Project 3"
+                class="projects__list__img"
+              />
+              <img
+                src="./assests/img/Projects-decor.svg"
+                alt="Projects Decor"
+                class="projects__decor"
+              />
+            </div>
+            <div class="projects__list__item p-[24px] flex justify-between">
+              <div class="projects__list__info">
+                <h3 class="projects__list__heading mb-[10px]">Wally Website</h3>
+                <p class="projects__list__desc mb-[20px]">
+                  Lorem ipsum dolor amet, consectetur adipiscing st elit.
+                </p>
+                <a href="#!" class="projects__list__cta">Case Study</a>
+              </div>
+              <img
+                src="./assests/img/Project4.png"
+                alt="Project 4"
+                class="projects__list__img"
+              />
+              <img
+                src="./assests/img/Projects-decor.svg"
+                alt="Projects Decor"
+                class="projects__decor"
+              />
+            </div>
+          </div>
+          <button href="#!" class="btn projects__cta mx-auto">
+            All Projects
+          </button>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="about">
+        <div
+          class="container mx-auto px-14 pt-[140px] flex flex-col items-center"
+        >
+          <p class="about__intro mb-[10px]">Hey,,,,It’s Arif 👋</p>
+          <h2 class="about__heading mb-[15px]">Interactive Designer</h2>
+          <p class="about__desc max-w-[570px] text-center mb-[70px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+            non nisl tincidunt ut elementum turpis.
+          </p>
+          <div
+            class="about__exp mb-[70px] py-[20px] flex gap-x-[135px] max-w-[946px] px-[140px]"
+          >
+            <div class="about__item">
+              <span class="about__item__number">08+</span>
+              <span class="about__item__desc">Years Experience</span>
+            </div>
+            <div class="about__item">
+              <span class="about__item__number">21+</span>
+              <span class="about__item__desc">Features & Awards</span>
+            </div>
+            <div class="about__item">
+              <span class="about__item__number">97%</span>
+              <span class="about__item__desc">Clients Rating</span>
+            </div>
+          </div>
+          <div class="about__item__video mb-[150px]" id="play">
+            <video
+              poster="./assests/video/Thumbnail.png"
+              src="./assests/video/HTML in 5 minutes.mp4"
+              id="myVideo"
+            ></video>
+            <img
+              src="./assests/img/Play.png"
+              alt="Play"
+              class="about__item__video__play"
+              id="playBtn"
+            />
+          </div>
+          <h2 class="about__heading mb-[20px]">What people says</h2>
+          <p class="about__desc max-w-[570px] text-center mb-[60px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+            non nisl tincidunt ut elementum turpis.
+          </p>
+          <div class="feedback flex flex-col items-center">
+            <p class="feedback__desc max-w-[679px] mb-[40px] text-center">
+              “Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa.”
+            </p>
+            <div class="feedback__info flex items-center gap-x-[15px]">
+              <img
+                src="./assests/img/Feedback.png"
+                alt="Feedback"
+                class="feedback__img"
+              />
+              <span class="feedback__name">Joe Elia</span>
+            </div>
+            <span class="feedback__title mb-[40px]"
+              >User Interface Design at PCL Lab</span
+            >
+            <div
+              class="feedback__dots flex gap-x-[15px] items-center mb-[75px]"
+            >
+              <div class="feedback__dot"></div>
+              <div class="feedback__dot"></div>
+              <div class="feedback__dot feedback__dot--active"></div>
+              <div class="feedback__dot"></div>
+              <div class="feedback__dot"></div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assests/img/About-decor.svg"
+          alt="About Decor 1"
+          class="about__decor1"
+        />
+        <img
+          src="./assests/img/About-decor2.svg"
+          alt="About Decor 2"
+          class="about__decor2"
+        />
+      </section>
+      <!-- FAQ -->
+      <section class="FAQ">
+        <div class="container mx-auto px-14 pt-[95px] flex flex-col">
+          <h2 class="FAQ__heading max-w-[575px]">
+            A few questions clients normally ask me
+          </h2>
+          <div
+            class="questions__list mt-[80px] mb-[160px] flex flex-col gap-[80px]"
+          >
+            <label
+              for="q1"
+              class="questions__item flex justify-between mr-[160px]"
+            >
+              <input
+                type="checkbox"
+                id="q1"
+                class="questions__item__input"
+                hidden
+              />
+              <div class="questions__info ml-[22px]">
+                <h3 class="questions__item__heading">
+                  What is your hourly rate?
+                </h3>
+                <p class="questions__item__answer my-[20px] max-w-[487px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  urna, non nisl tincidunt ut elementum turpis.
+                </p>
+              </div>
+              <div
+                class="questions__item__cta flex justify-center items-center my-[11px]"
+              >
+                <span class="minus">-</span>
+                <span class="plus">+</span>
+              </div>
+            </label>
+            <label
+              for="q2"
+              class="questions__item flex justify-between mr-[160px]"
+            >
+              <input
+                type="checkbox"
+                id="q2"
+                class="questions__item__input"
+                hidden
+              />
+              <div class="questions__info ml-[22px]">
+                <h3 class="questions__item__heading">
+                  What type of projects do you take on?
+                </h3>
+                <p class="questions__item__answer my-[20px] max-w-[487px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  urna, non nisl tincidunt ut elementum turpis.
+                </p>
+              </div>
+              <div
+                class="questions__item__cta flex justify-center items-center my-[11px]"
+              >
+                <span class="minus">-</span>
+                <span class="plus">+</span>
+              </div>
+            </label>
+            <label
+              for="q3"
+              class="questions__item flex justify-between mr-[160px]"
+            >
+              <input
+                type="checkbox"
+                id="q3"
+                class="questions__item__input"
+                hidden
+              />
+              <div class="questions__info ml-[22px]">
+                <h3 class="questions__item__heading">
+                  How do you charge for projects ?
+                </h3>
+                <p class="questions__item__answer my-[20px] max-w-[487px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  urna, non nisl tincidunt ut elementum turpis.
+                </p>
+              </div>
+              <div
+                class="questions__item__cta flex justify-center items-center my-[11px]"
+              >
+                <span class="minus">-</span>
+                <span class="plus">+</span>
+              </div>
+            </label>
+            <label
+              for="q4"
+              class="questions__item flex justify-between mr-[160px]"
+            >
+              <input
+                type="checkbox"
+                id="q4"
+                class="questions__item__input"
+                hidden
+              />
+              <div class="questions__info ml-[22px]">
+                <h3 class="questions__item__heading">
+                  What time-zone do you work in?
+                </h3>
+                <p class="questions__item__answer my-[20px] max-w-[487px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  urna, non nisl tincidunt ut elementum turpis.
+                </p>
+              </div>
+              <div
+                class="questions__item__cta flex justify-center items-center my-[11px]"
+              >
+                <span class="minus">-</span>
+                <span class="plus">+</span>
+              </div>
+            </label>
+            <label
+              for="q5"
+              class="questions__item flex justify-between mr-[160px]"
+            >
+              <input
+                type="checkbox"
+                id="q5"
+                class="questions__item__input"
+                hidden
+              />
+              <div class="questions__info ml-[22px]">
+                <h3 class="questions__item__heading">
+                  How often can we communicate?
+                </h3>
+                <p class="questions__item__answer my-[20px] max-w-[487px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  urna, non nisl tincidunt ut elementum turpis.
+                </p>
+              </div>
+              <div
+                class="questions__item__cta flex justify-center items-center my-[11px]"
+              >
+                <span class="minus">-</span>
+                <span class="plus">+</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+      <!-- Atmosphere -->
+      <section class="atmosphere">
+        <div class="contatiner mx-auto px-14 flex flex-col items-center">
+          <h2 class="atmosphere__heading mb-[20px]">My atmosphere</h2>
+          <p class="atmosphere__desc max-w-[528px] mb-[30px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+            non nisl tincidunt ut elementum turpis.
+          </p>
+          <span class="atmosphere__ig mb-[70px]">@interaction_arif</span>
+          <div class="atmosphere__list grid grid-cols-3 gap-[30px] mb-[140px]">
+            <img
+              src="./assests/img/Atmos1.png"
+              alt="Atmos 1"
+              class="atmosphere__list__item"
+            />
+            <img
+              src="./assests/img/Atmos2.png"
+              alt="Atmos 2"
+              class="atmosphere__list__item"
+            />
+            <img
+              src="./assests/img/Atmos3.png"
+              alt="Atmos 3"
+              class="atmosphere__list__item"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container mx-auto flex flex-col">
+          <div class="footer__top flex flex-col items-center">
+            <span class="footer__icon mt-[68px]">🥳</span>
+            <h2 class="footer__heading mb-[10px]">Got a project? Let’s talk</h2>
+            <p class="footer__desc max-w-[570px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+              non nisl tincidunt ut elementum turpis.
+            </p>
+            <button class="btn mt-[30px] mb-[68px]">Book a Call</button>
+            <img
+              src="./assests/img/Footer-decor1.svg"
+              alt="Footer 1"
+              class="footer__decor footer__decor1"
+            />
+            <img
+              src="./assests/img/Footer-decor2.svg"
+              alt="Footer 2"
+              class="footer__decor footer__decor2"
+            />
+            <img
+              src="./assests/img/Footer-decor3.svg"
+              alt="Footer 3"
+              class="footer__decor footer__decor3"
+            />
+          </div>
+          <div class="footer__bottom grid grid-cols-3 mt-[50px] mb-[32px]">
+            <div class="header__contact flex items-center gap-1.5">
+              <img
+                src="./assests/img/Logo.png"
+                alt="Email"
+                class="header__contact__logo"
+              />
+              <a href="mailto:hi@arif.interactive" target="_blank"
+                ><div class="header__contact__email">
+                  hi@arif.interactive
+                </div></a
+              >
+            </div>
+            <img
+              src="./assests/img/Face.png"
+              alt="Face"
+              class="header__face w-[100px] mx-auto"
+            />
+            <ul
+              class="header__links flex items-center justify-end gap-x-[43px]"
+            >
+              <a href="#!"><li class="header__links__link">Projects</li></a>
+              <a href="#!"><li class="header__links__link">Journey</li></a>
+              <a href="#!"><li class="header__links__link">Service</li></a>
+              <a href="#!"><li class="header__links__link">Contact</li></a>
+            </ul>
+          </div>
+          <div class="footer__line mb-[20px] self-center"></div>
+        </div>
+        <div
+          class="copyright container mx-auto flex justify-between px-[80px] mb-[20px]"
+        >
+          <div class="copyright__left">
+            ©interactiveArif 2021. All rights reserved.
+          </div>
+          <div class="copyright__right">
+            <span>Privacy Policy</span>
+            <span class="copyright__term ml-[35px]">Terms & Conditions</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
